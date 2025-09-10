@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Student Activity Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px 35px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      width: 360px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+
+    .login-container p {
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 20px;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 14px;
+      background: #f9fafb;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-login:hover {
+      background: #1d4ed8;
+    }
+
+    .extra-links {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #475569;
+    }
+
+    .extra-links a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome Back!</h2>
+    <p>Login to your Student Activity Portal</p>
+
+    <form id="loginForm">
+      <input type="email" placeholder="Enter your Email" required>
+      <input type="password" placeholder="Enter your Password" required>
+      <button type="submit" class="btn-login">Login</button>
+    </form>
+
+    <div class="extra-links">
+      <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
+      <p><a href="#">Forgot Password?</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Login successful! Redirecting to Dashboard...");
+      window.location.href = "index.html"; // goes back to the dashboard
+    });
+  </script>
+</body>
+</html>
