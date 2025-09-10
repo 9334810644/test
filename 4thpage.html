@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password - Student Activity Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .forgot-container {
+      background: white;
+      padding: 40px 35px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      width: 380px;
+      text-align: center;
+    }
+
+    .forgot-container h2 {
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+
+    .forgot-container p {
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 20px;
+    }
+
+    .forgot-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 14px;
+      background: #f9fafb;
+    }
+
+    .btn-reset {
+      width: 100%;
+      padding: 12px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-reset:hover {
+      background: #1d4ed8;
+    }
+
+    .extra-links {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #475569;
+    }
+
+    .extra-links a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="forgot-container">
+    <h2>Forgot Password?</h2>
+    <p>Enter your registered email and we’ll send you a reset link.</p>
+
+    <form id="forgotForm">
+      <input type="email" placeholder="Enter your Email" required>
+      <button type="submit" class="btn-reset">Send Reset Link</button>
+    </form>
+
+    <div class="extra-links">
+      <p><a href="login.html">Back to Login</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("forgotForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Password reset link has been sent to your email!");
+      window.location.href = "login.html"; // Redirect back to login
+    });
+  </script>
+</body>
+</html>
