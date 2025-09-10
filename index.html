@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Activity Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    /* Navbar */
+    header {
+      background: #1e3a8a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header nav a {
+      margin: 0 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-login, .btn-signup {
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-login {
+      background: white;
+      color: #1e3a8a;
+      margin-right: 10px;
+    }
+
+    .btn-signup {
+      background: #2563eb;
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 80px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      margin-right: 10px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-register {
+      background: #22c55e;
+      color: white;
+    }
+
+    .btn-register:hover {
+      background: #16a34a;
+    }
+
+    .btn-plain {
+      background: #f1f5f9;
+    }
+
+    /* Profile Card */
+    .profile-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      width: 350px;
+    }
+
+    .profile-card img {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .profile-card h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .profile-card small {
+      color: #475569;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      text-align: center;
+    }
+
+    .stat-box h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #1e3a8a;
+    }
+
+    .stat-box p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #475569;
+    }
+
+    .upload-btn {
+      display: block;
+      margin: 15px auto 0;
+      padding: 8px 20px;
+      background: #22c55e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .upload-btn:hover {
+      background: #16a34a;
+    }
+
+    .quick-stats {
+      padding: 30px 80px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Government_Seal_of_Jammu_and_Kashmir.svg" alt="logo" width="30">
+      <span>Govt. of Jammu & Kashmir</span>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Students</a>
+      <a href="#">Faculty</a>
+      <a href="#">Activities</a>
+      <a href="#">Reports</a>
+      <a href="#">Admin</a>
+    </nav>
+    <div>
+      <button class="btn-login">Login</button>
+      <button class="btn-signup">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>One Platform for<br>All Student Activities</h1>
+      <button class="btn-register">Register Now</button>
+      <button class="btn-plain">Login</button>
+    </div>
+
+    <div class="profile-card">
+      <h2>Welcome, <b>John Doe!</b></h2>
+      <img src="https://via.placeholder.com/60" alt="profile">
+      <p><small>Roll no: 123495188</small></p>
+      <p><small>Department: Computer Science</small></p>
+      <p><small>Year: 2nd year</small></p>
+
+      <button class="upload-btn">Upload</button>
+
+      <div class="stats">
+        <div class="stat-box">
+          <h3>1,254</h3>
+          <p>Students</p>
+        </div>
+        <div class="stat-box">
+          <h3>326</h3>
+          <p>Events</p>
+        </div>
+        <div class="stat-box">
+          <h3>1,560</h3>
+          <p>Certifications</p>
+        </div>
+        <div class="stat-box">
+          <h3>5,832</h3>
+          <p>Hours</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="quick-stats">Quick Stats</div>
+
+  <!-- Example JavaScript -->
+  <script>
+    document.querySelector(".upload-btn").addEventListener("click", () => {
+      alert("Upload button clicked!");
+    });
+  </script>
+
+</body>
+</html>

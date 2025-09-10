@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Left Image Section */
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e0f2fe;
+      position: relative;
+    }
+
+    .left img {
+      width: 350px;
+      height: auto;
+      border-radius: 50% 35% 50% 35%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Right Form Section */
+    .right {
+      flex: 1;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      width: 80%;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .form-container h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #111827;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      background: #f1f5f9;
+      font-size: 14px;
+    }
+
+    .btn-create {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #facc15;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-create:hover {
+      background: #eab308;
+    }
+
+    .form-container p {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .form-container p a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .form-container p a:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      margin: 20px 0;
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .social-btns {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .social-btns button {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .social-btns img {
+      width: 20px;
+      height: 20px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <!-- Left Section with Balloon -->
+  <div class="left">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Hot_air_balloon_over_cappadocia.jpg" alt="Balloon">
+  </div>
+
+  <!-- Right Section with Form -->
+  <div class="right">
+    <div class="form-container">
+      <h2>Create your Free Account</h2>
+      <input type="text" placeholder="Enter your Full Name here">
+      <input type="email" placeholder="Enter your Email here">
+      <input type="password" placeholder="Enter your Password here">
+      <button class="btn-create">Create Account</button>
+
+      <p>Already have an account? <a href="#">Log in</a></p>
+      <div class="divider">— OR —</div>
+
+      <div class="social-btns">
+        <button><img src="https://img.icons8.com/color/48/000000/google-logo.png"> Google</button>
+        <button><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"> GitHub</button>
+      </div>
+
+      <footer>Reserved directs to Leo Barreto</footer>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    document.querySelector(".btn-create").addEventListener("click", () => {
+      alert("Account Created Successfully!");
+    });
+  </script>
+</body>
+</html>
